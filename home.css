@@ -662,6 +662,11 @@ section.What-I-do > .container {
 }
 
 @media (max-width: 1155px) {
+  
+.wraper-mine.flex-content-do > .single-div-profession:nth-child(3),
+.single-div-profession:nth-child(6), .single-div-profession:nth-child(9) {
+  margin-right: 51px;
+}
   .wraper {
     flex-direction: column;
   }
