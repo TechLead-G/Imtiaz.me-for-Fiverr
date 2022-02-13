@@ -268,7 +268,8 @@ section.What-I-do > .container {
 }
 
 .wraper-mine.flex-content-do > .single-div-profession:nth-child(3),
-.single-div-profession:nth-child(6), .single-div-profession:nth-child(9) {
+.single-div-profession:nth-child(6),
+.single-div-profession:nth-child(9) {
   margin-right: 0;
 }
 
@@ -302,19 +303,18 @@ section.What-I-do > .container {
 
 /*===========================*/
 
-
 #loading {
   width: 100%;
   position: fixed;
   height: 100vh;
-  background: #EA4961;
+  background: #ea4961;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .loader {
-  background: #EA4961;
+  background: #ea4961;
   position: relative;
   width: 75px;
   height: 100px;
@@ -332,31 +332,31 @@ section.What-I-do > .container {
   left: 0px;
   transform: scale(1, 0.2);
   -webkit-animation: barUp1 4s infinite;
-          animation: barUp1 4s infinite;
+  animation: barUp1 4s infinite;
 }
 .loader__bar:nth-child(2) {
   left: 15px;
   transform: scale(1, 0.4);
   -webkit-animation: barUp2 4s infinite;
-          animation: barUp2 4s infinite;
+  animation: barUp2 4s infinite;
 }
 .loader__bar:nth-child(3) {
   left: 30px;
   transform: scale(1, 0.6);
   -webkit-animation: barUp3 4s infinite;
-          animation: barUp3 4s infinite;
+  animation: barUp3 4s infinite;
 }
 .loader__bar:nth-child(4) {
   left: 45px;
   transform: scale(1, 0.8);
   -webkit-animation: barUp4 4s infinite;
-          animation: barUp4 4s infinite;
+  animation: barUp4 4s infinite;
 }
 .loader__bar:nth-child(5) {
   left: 60px;
   transform: scale(1, 1);
   -webkit-animation: barUp5 4s infinite;
-          animation: barUp5 4s infinite;
+  animation: barUp5 4s infinite;
 }
 .loader__ball {
   position: absolute;
@@ -367,7 +367,7 @@ section.What-I-do > .container {
   background: #fff;
   border-radius: 50%;
   -webkit-animation: ball 4s infinite;
-          animation: ball 4s infinite;
+  animation: ball 4s infinite;
 }
 
 @-webkit-keyframes ball {
@@ -643,10 +643,195 @@ section.What-I-do > .container {
 }
 /*===========================*/
 
+body {
+  background-color: #171820;
+}
+
+.head-succes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image > img {
+  width: 100%;
+}
+
+.image {
+  width: 28%;
+}
+
+.success-container {
+  /* display: flex; */
+  justify-content: center;
+  flex-direction: revert;
+}
+
+.single-success {
+  display: flex;
+  justify-content: space-around;
+  height: 227px;
+}
+
+.head-succes > h1 {
+  font-size: 42px;
+  font-family: "Gugi";
+  color: #edfdee;
+  margin-bottom: 94px;
+  margin-top: 60px;
+}
+
+.img-des > h2 {
+  color: #edfdee;
+  font-family: "Oxanium";
+  padding-bottom: 18px;
+}
+
+.img-des > p {
+  width: 97%;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Poppins";
+  line-height: 21px;
+}
+
+.img-des {
+  width: 59%;
+  position: relative;
+}
+
+span.upwork_profile_goto {
+  background: red;
+  padding: 10px 28px;
+  position: absolute;
+  top: -103px;
+  font-family: "Oxanium";
+  background: #0caa00;
+  border-radius: 6px;
+  color: #edfdee;
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.8s;
+}
+
+span.tooltip {
+  width: 20px;
+  height: 20px;
+  background: #0caa00;
+  position: absolute;
+  left: 45%;
+  bottom: -10px;
+  transform: rotate(45deg);
+}
+
+.img-des > h2:hover + span.upwork_profile_goto {
+  top: -52px;
+  opacity: 1;
+}
+
+img.up_vet {
+  margin-left: 15px;
+}
+
+.img-des > h2 > a {
+  text-decoration: none;
+  color: #edfdee;
+  font-family: "Oxanium";
+}
+
+section.Game {
+  margin-top: 118px;
+}
+
+.game_heading > h2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Oxanium";
+  font-weight: 700;
+  font-size: 53px;
+  letter-spacing: -0.04em;
+  color: #edfdee;
+}
+
+.game_heading {
+  margin-bottom: 71px;
+}
+
+.game_contaier {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.single-game-container {
+  width: 350px;
+  height: 250px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+}
+
+.single-game-container {
+  margin-bottom: 54px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.single-game-container >  img:hover {
+  transform: scale(1.45);
+}
+
+.single-game-container > img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: 0.45s;
+}
+
+.single-game-container > h3 {
+  font-family: "Oxanium";
+  color: #fff;
+  font-size: 31px;
+}
 
 /*====================*/
 /*Responsive CSS Code*/
 /*=====================*/
+/* 
+@media (max-width: 1090px) {
+
+  .single-game-container {
+    width: 49%;
+    height: 348px;
+  }
+  
+}
+
+
+@media (min-width: 950px) {
+
+  .single-game-container {
+    width: 49%;
+    height: 348px;
+  }
+  
+} */
+
+@media (max-width: 930px) {
+  .single-success {
+    flex-direction: column;
+    align-items: center;
+    height: 421px;
+  }
+  .img-des {
+    width: 100%;
+    padding-left: 23px;
+  }
+}
 
 @media (max-width: 850px) {
   .site-nav-bar {
@@ -662,11 +847,20 @@ section.What-I-do > .container {
 }
 
 @media (max-width: 1155px) {
-  
-.wraper-mine.flex-content-do > .single-div-profession:nth-child(3),
-.single-div-profession:nth-child(6), .single-div-profession:nth-child(9) {
-  margin-right: 51px;
+
+  .single-game-container {
+    margin: 0 auto;
+    margin-bottom: 54px;
+    width: 95%;
+    height: 299px;
 }
+
+  .wraper-mine.flex-content-do > .single-div-profession:nth-child(3),
+  .single-div-profession:nth-child(6),
+  .single-div-profession:nth-child(9) {
+    margin-right: 51px;
+  }
+
   .wraper {
     flex-direction: column;
   }
