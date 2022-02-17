@@ -23,6 +23,10 @@
 
 /*==============================*/
 
+section.some-of-my-success {
+    z-index: -1;
+}
+
 .wraper {
   overflow: hidden;
   display: flex;
