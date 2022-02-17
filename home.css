@@ -68,6 +68,9 @@ header {
 .button > a > img {
   width: 50px;
 }
+img.iphone {
+    width: 166px;
+}
 
 .right-home-page > img {
   width: 741px;
